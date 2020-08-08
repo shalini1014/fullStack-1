@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practical-7</title>
+    <style>
+        *
+   {
+       padding: 0;
+       margin: 0;
+   }
+   h1{
+       text-align: center;
+   }
+   #Container
+   {
+       border:solid;
+       width: 1200px;
+       margin: 0px auto;
+       padding: 15px;
+   }
+   #Header{
+       background-color: lightgray;
+       height: 50px;
+       margin-bottom: 15px;
+       border-radius: 0px;
+       color: white;
+       font-size: 40px;
+
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+   #Footer{
+       background-color: plum;
+       height: 50px;
+       margin-bottom: 15px;
+       border-radius: 0px;
+       color: white;
+       font-size: 40px;
+        margin: 10px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+   #Banner{
+       
+       height: 400px;
+       /*border: solid green;*/
+       background-color: lightblue;
+       margin-bottom: 15px;
+       border-radius: 0px;
+       color: white;
+       font-size: 40px;
+
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+   #section-1{
+      width: 100%;
+      margin: 15px auto;
+      display: flex;
+      flex-direction: row;   
+  }
+   #circle{
+      width: 100%;
+      margin: 15px auto;
+      display: flex;
+      flex-direction: row;   
+  }
+  #circle::after{
+      content: '';
+      display: block;
+      clear: both;
+  }
+ 
+  .circle-1{
+      height: 250px;
+      width: 250px;
+      border-radius: 50%;
+      background-color: goldenrod;
+      float: left;
+      margin-left: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+  }
+  .circle-2{
+      height: 250px;
+      width: 250px;
+      border-radius: 50%;
+      background-color: goldenrod;
+      float: left;
+      margin-left: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+  }
+  .circle-3{
+      height: 250px;
+      width: 250px;
+      border-radius: 50%;
+      background-color: goldenrod;
+      float: left;
+      margin-left: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+  }
+  .circle-4{
+      height: 250px;
+      width: 250px;
+      border-radius: 50%;
+      background-color: goldenrod;
+      float: left;
+      margin-left: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+  }
+  #section-2
+   {
+       /*border:solid;*/
+       width: 1170px;
+       height: 400px;
+       margin: 0px auto;
+       padding: 10px;
+   }
+   #left-sidebar{
+            width: 49%;
+            height: 400px;
+            /*border: solid blue;*/
+            background-color: lightgrey;
+            float: left;
+            margin-bottom: 30px;
+            border-radius: 0px;
+            color: white;
+            font-size: 40px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+        #right-sidebar{
+            width: 49%;
+            height: 400px;
+            /*border: solid green;*/
+            /*background-color: goldenrod;*/
+            float: right;
+            margin-bottom: 30px;
+            border-radius: 0px;
+            color: white;
+            font-size: 40px;
+
+            display: flex;
+            flex-direction: column;
+        }
+        .R1{
+            width: 100%;
+            height: 132px;
+            background-color: rgb(185, 92, 0);
+            margin-bottom: 15px;
+            border-radius: 0px;
+            color: white;
+            font-size: 40px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            order: 1;
+        }
+        .R2{
+            width: 100%;
+            height: 132px;
+            background-color:  rgb(185, 92, 0);
+            margin-bottom: 15px;
+            border-radius: 0px;
+            color: white;
+            font-size: 40px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            order: 2;
+        }
+        .R3{
+            width: 100%;
+            height: 132px;
+            background-color:  rgb(185, 92, 0);
+            margin-bottom: 0px;
+            border-radius: 0px;
+            color: white;
+            font-size: 40px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            order: 3;
+        }
+        #section-3
+   {
+       /*border:solid;*/
+       width: 1170px;
+       height: 300px;
+       margin: 0px auto;
+       padding: 10px;
+   }
+    .box-1{
+        width: 17%;
+        float:left;
+        margin:20px 40px;
+        background-color:orangered;
+        padding: 15px;
+        border-radius: 0px;
+        height: 240px;
+        
+       }
+       .box-2{
+        width: 17%;
+        float:left;
+        margin:20px 15px;
+        background-color:orangered;
+        padding: 15px;
+        border-radius: 0px;
+        height: 240px;
+       }
+       .box-3{
+        width: 17%;
+        float:left;
+        margin:20px 50px;
+        background-color:orangered;
+        padding: 15px;
+        border-radius: 0px;
+        height: 240px;
+       }
+       .box-4{
+        width: 17%;
+        float:left;
+        margin:20px 10px;
+        background-color:orangered;
+        padding: 15px;
+        border-radius: 0px;
+        height: 240px;
+        
+       }
+</style>
+</head>
+<body>
+<div id="Container">
+   <div id="Header">Header</div>
+   <div id="Banner">Banner</div>
+   <h1>section-1</h1>
+   <div id="section-1">
+        <div id="circle">
+            <div class="circle-1"></div>
+            <div class="circle-2"></div>
+            <div class="circle-3"></div>
+            <div class="circle-4"></div>
+        </div>   
+    </div>
+    <h1 style="text-align: center;">Section-2</h1>
+    <div id="section-2">
+        <div id="left-sidebar">
+            <div class="L1">Main Content</div> 
+        </div> 
+        <div id="right-sidebar">
+            <div class="R1">Article1</div>
+            <div class="R2">Article2</div>
+            <div class="R3">Article3</div>
+        </div>
+    </div>
+    <h1 style="text-align: center;">Section-3</h1>
+    <div id="section-3">
+        <div class="box-1"></div>
+        <div class="box-2"></div>
+        <div class="box-3"></div>
+        <div class="box-4"></div>
+    </div>
+    <h1 style="text-align: center;">Section-4</h1>
+   <div id="Footer">Footer</div>
+</div>
+</body>
+</html>
