@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h2::before{
+        content: '-';
+    }
+    /*we can not select * in the text bcz it is not a content it is dynamic content
+    h2::before{
+        content: '*';
+    }*/
+    h2::after{
+        content: '*';
+    }
+
+</style>
+<body>
+    <h2>Shalini Kushwaha</h2>
+</body>
+</html>

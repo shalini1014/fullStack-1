@@ -1,0 +1,47 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>position property</title>
+     <style>
+       *{
+           padding: 0px;
+       }
+     .container{
+         width:100vw;
+         height:100vh;
+         background-color: lightgrey;
+         display: flex;
+         justify-content:center;
+         align-items: center;
+     }
+     .main{
+         background-color: white;
+         width: 600px;
+         height: 400px;
+         padding: 10px;
+         overflow: hidden;
+     }
+     .main img{
+         width:300px;
+         height: 200px;
+         position: relative;
+         bottom: 0px;
+     }
+     .main h1{
+         position: relative;
+         top: 100px;
+     }
+    </style>
+ </head>
+ <body>
+     <div class="container">
+        <div class="main">
+            <img src="../images/boot.png">
+            <h1>This is position property Example</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad perspiciatis, mollitia eius debitis alias velit corrupti temporibus deleniti perferendis est animi ipsa ex. Eius nostrum facilis molestiae minus obcaecati adipisci aperiam et omnis error a. Voluptate eligendi, cupiditate consequatur maxime incidunt laudantium provident impedit sequi, dolores.</p>
+        </div>
+    </div>
+ </body>
+ </html>
