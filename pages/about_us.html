@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        
+        }
+        html {
+            font-size: 10px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+        }
+        a {
+            text-decoration: none;
+        }
+        .container {
+            min-height: 110vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #About{
+            background-image: url(../images/glalibraries-banner.jpg);
+            background-size: cover;
+            background-position: top center;
+            position: relative;
+            z-index: 1;
+        }
+        #About::after{
+            content:'';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            opacity: .7;
+            z-index: -1;
+        }
+        p{
+            font-size: 30px;
+            color: whitesmoke;
+        }
+        #About h1{
+            display: block;
+            width: fit-content;
+            font-size: 4rem;
+            position: relative;
+            color: transparent;
+            animation: text_reveal 2s ease forwards;
+            
+        }
+        #About h1 span{
+            position:absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 0;
+            background-color: skyblue;
+            animation: text_reveal_box 1s ease;
+            animation-delay: 1s;
+        
+        }
+        @keyframes text_reveal_box{
+            50% {
+                width: 100%;
+                left: 0;
+            }
+            100% {
+                width: 0;
+                left: 100%;
+            }
+        }
+        @keyframes text_reveal{
+            100%{
+                color: white;
+            }
+        }
+        #section-1{
+        margin-top: 5px;
+        margin-bottom: 30px;
+        width: 50%;
+        background-color: transparent;
+        height:530px;
+        float: left;
+        color: white;  
+        }
+        #section-1 h1{
+            padding-top: 2px;
+            padding-bottom: 10px;
+            font-size:40px ;
+            
+
+        }
+        #section-1 p{
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        #section-2{
+        margin-top: 5px;
+        margin-bottom: 30px;
+        width: 50%;
+        background-color: transparent;
+        height:530px;
+        float: right;
+        color: white;  
+        }
+        #section-2 h1{
+            padding-top: 2px;
+            padding-bottom: 10px;
+            font-size:40px ;
+            padding-left: 30px;
+
+        }
+        #section-2 p{
+            padding-left: 30px;
+            padding-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <section id="About">
+        <div class=" About container">
+            <div id="section-1">
+                <h1 style="color: teal">About Us<span></span></h1><br>
+                <p>
+                    The website aims to provide an interactive platform to interact with those students
+                     who have faced the company interview and
+                     can chat with the senior person according to their interest as one feels hesitation in
+                      a new atmosphere and as a output they are unable to interact with teachers or seniors
+                       about certain things. In addition, they will also get some more information which will
+                       help them to face interview with confidence and to overcome certain problems that are
+                        faced by a fresher as experience plays a major role in all field. 
+                        So, we named it “GLA CONNECTIFY” which suggests to connect GLA students and management together 
+                        on a single platform.
+                    </p>
+                </div>
+                <div id="section-2">
+                    <h1>Motivation<span></span></h1><br>
+                    <p>
+                        In current scenario, student do not get exposure to the real life. In order of scoring
+                         high CPI, they just focus on the learning part and forgot the application of the 
+                         concept in the real life. Now-a-days, Students mainly are placement oriented but they
+                          do not get the right guidelines regarding the placement drives, companies, need of
+                           the companies and technologies which are in trend.  
+                        So, we come up with this idea of making a webpage for helping such student where they
+                         can find all the needed information at one place. The basic advantage of this project
+                          is that it is time saving as it saves the time of the student which was wasted in 
+                          browsing the same information on different sites.
+                        
+                    </p>
+                </div>
+        
+            </div>
+        </div>
+    </section>
+</body>
+</html>
