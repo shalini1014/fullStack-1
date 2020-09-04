@@ -6,6 +6,10 @@
 		{
 			"name": "fullStack-1-1",
 			"path": ".."
+		},
+		{
+			"name": "miniproject",
+			"path": "..\\..\\..\\miniproject"
 		}
 	],
 	"settings": {

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table{
+            margin: 20px auto;
+            background-color: skyblue;
+            width: 80%;
+        }
+        /*odd rows andeven rows or give row number for particular row*/
+        tr:nth-child(odd){
+            background-color: darkcyan;
+        }
+        th{
+            background-color: slategray;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table,tr,td,th{
+            border: 1px solid blue ;
+            border-spacing: 10px;
+            /*border-collapse: separate;*/
+            border-collapse: collapse;
+            /*border-spacing: 0px;*/
+            padding: 10px;
+            
+        }
+        tr:hover{
+            background-color: pink;
+        }
+        tr:first-child()th
+        {
+            font-size:24px;
+            color: white;
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    </body>
+    <table>
+        <tr>
+            <th align="center" colspan="3">Lecture Coverage Report</th>
+        </tr>
+        <tr>
+            <th>Sno.</th>
+            <th>Topic</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>introduction to HTML5</td>
+            <td>Delivered</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>introduction to CSS</td>
+            <td>Delivered</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>introduction to Table</td>
+            <td>pending</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>introduction to Animation</td>
+            <td>pending</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>introduction Transformation</td>
+            <td>pending</td>
+        </tr>
+    </table>
+</body>
+</html>
