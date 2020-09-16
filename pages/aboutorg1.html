@@ -3,48 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Organazation</title>
+    <title>About Us</title>
     <style>
-        img {
-       display: block;
-       margin-left: auto;
-       margin-right: auto;
-       margin-top: 30px;
-     }
-    
-       .box {
+        * {
+            padding: 0;
+            margin: 0;
+        
+        }
+        html {
+            font-size: 10px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
-           border: 5px solid black;
-           width: 700px;
-           margin:20px auto;
-           background-color: skyblue;
+        }
+        a {
+            text-decoration: none;
+        }
+        .container {
+            min-height: 110vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #About{
+            background-image: url(../images/coursera.jpg);
+            background-size: cover;
+            background-position: top center;
+            position: relative;
+            z-index: 1;
+        }
+        #About::after{
+            content:'';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            opacity: .7;
+            z-index: -1;
+        }
+        p{
+            font-size: 30px;
+            color: whitesmoke;
+        }
+        #About h1{
+            display: block;
+            width: fit-content;
+            font-size: 4rem;
+            position: relative;
+            color: transparent;
+            animation: text_reveal 2s ease forwards;
+            
+        }
+        #About h1 span{
+            position:absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 0;
+            background-color: skyblue;
+            animation: text_reveal_box 1s ease;
+            animation-delay: 1s;
+        
+        }
+        @keyframes text_reveal_box{
+            50% {
+                width: 100%;
+                left: 0;
+            }
+            100% {
+                width: 0;
+                left: 100%;
+            }
+        }
+        @keyframes text_reveal{
+            100%{
+                color: white;
+            }
+        }
+        #section-1{
+        margin-top: 5px;
+        margin-bottom: 30px;
+        width: 50%;
+        background-color: transparent;
+        height:550px;
+        color: white;
+        margin-right: auto; 
+        }
+        #section-1 h1{
+            padding-top: 2px;
+            padding-bottom: 10px;
+            font-size:40px ;
+            
 
-       }
-       .box p {
-           border:50px;
-           margin-top:50px;
-           margin-right:20x;
-           margin-bottom: 30px;
-           margin-left: 20px;
-           border:40px;
-       }
-       h1{
-           text-align: center;
-           font-size: 50px;
-           font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-       }
-
-   </style>
+        }
+        #section-1 p{
+            padding-left: 2px;
+            padding-right: 15px;
+        }
+       
+    </style>
 </head>
 <body>
-    <div class="box">
-        <h1>This is about coursera</h1>
-        <img src="../images/coursera.jpg"width="600" height="300"/>
-    <p>Coursera is an online education provider that offers online courses, popularly known as MOOCs or Massive Open Online Courses, from top universities around the world. Currently it has over 200 partners from 48 countries. These partners include Universities such as Stanford, Duke, Penn, Princeton, Michigan, Peking, and HEC Paris. Coursera has also started partnering with companies like IBM, Google, and PwC — these companies are also launching courses on Coursera.
+    <section id="About">
+        <div class=" About container">
+            <div id="section-1">
+                <h1 style="color: teal">About Organization<span></span></h1><br>
+                <p>
+                    Coursera is an online education provider that offers online courses, popularly known as MOOCs or Massive Open Online Courses, from top universities around the world. Currently it has over 200 partners from 48 countries. These partners include Universities such as Stanford, Duke, Penn, Princeton, Michigan, Peking, and HEC Paris. Coursera has also started partnering with companies like IBM, Google, and PwC — these companies are also launching courses on Coursera.
 
         Coursera is the most popular MOOC provider in the world based on the number of students (over 45 million learners) and has an active catalog of 3,800+ online courses. 
         
-        As well as these individual courses and 16 online degrees, Coursera offers 400 groups of courses known as Specializations, MasterTracks, and Professional Certificates. </p>
-
+        As well as these individual courses and 16 online degrees, Coursera offers 400 groups of courses known as Specializations, MasterTracks, and Professional Certificates. 
+                </p>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

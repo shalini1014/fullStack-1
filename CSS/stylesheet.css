@@ -18,14 +18,14 @@ a {
     align-items: center;
     justify-content: center;
 }
-#hero{
+#intro{
     background-image: url(../images/back1.jfif);
     background-size: cover;
     background-position: top center;
     position: relative;
     z-index: 1;
 }
-#hero::after{
+#intro::after{
     content:'';
     position: absolute;
     left: 0;
@@ -36,7 +36,7 @@ a {
     opacity: .7;
     z-index: -1;
 }
-#hero h1{
+#intro h1{
     display: block;
     width: fit-content;
     font-size: 4rem;
@@ -44,7 +44,7 @@ a {
     color: transparent;
     animation: text_reveal 1s ease forwards;
 }
-#hero h1 span{
+#intro h1 span{
     position: absolute;
     top: 0;
     left: 0;
@@ -54,7 +54,7 @@ a {
     animation: text_reveal_box 1s ease;
     animation-delay: 1s;
 }
-#hero .cta{
+#intro .cta{
     display: inline-block;
     padding: 10px 30px;
     color: white;
@@ -67,7 +67,7 @@ a {
     transition: .3s ease;
     transition-property: background-color, color;
 }
-#hero .cta:hover{
+#intro .cta:hover{
     color: black;
     background-color: skyblue;
 }
